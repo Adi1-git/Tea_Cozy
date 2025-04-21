@@ -1,0 +1,180 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    color: seashell;
+    background-color: black;
+    opacity: 0.9;
+    margin: 0;
+    padding: 0;
+    text-align: horizontal;
+}
+
+.header {
+    height: 69px;
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    border-bottom: 1px solid seashell;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    text-decoration: underline;
+    margin-left: auto;
+    gap: 20px;
+}
+
+.nav-links li a {
+    color: seashell;
+    font-size: 18px;
+}
+
+.logo {
+    width: 50px;
+}
+
+.container1 {
+    background-image: url(/Users/adi/Codeccademy/project-1/Tea_cozy/img-mission-background.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading-text {
+    position: absolute;
+    text-align: center;
+    background-color: black;
+    padding: 20px 40px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.heading-text h2 {
+    color: seashell;
+    font-size: 30px;
+    margin: 0;
+}
+
+.heading-text h4 {
+    color: seashell;
+    font-size: 20px;
+    margin: 0;
+}
+
+.container2 {
+    padding: 40px 20px;
+    width: 1000px;
+    margin: 0 auto;
+    color: seashell;
+    text-align: center;
+}
+
+.container2 h2, .container2 h4 {
+    color: seashell;
+}
+
+.gallery {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr); /* Creates three equal columns for the first row */
+    justify-items: center; /* Center items within their grid cells horizontally */
+    align-items: start; 
+
+}
+
+.gallery-item {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: seashell;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    height: 200px;
+    width: 300px; /* Set a fixed width for the gallery items */
+}
+
+.gallery-item img {
+    width: 100%; /* Ensure the images take up the full width of the item */
+    height: 100%; /* Adjust the height of the image to fit inside the gallery item */
+    object-fit: cover; /* Ensures the image covers the space without distortion */
+    border-radius: 10px; /* Optional: Round the corners of the image */
+}
+
+.gallery-item h4 {
+    color: seashell;
+    margin-top: 10px;
+}
+
+.container3 {
+    padding: 40px 20px;
+    text-align: center;
+    position: relative; /* For positioning the background image */
+    display: flex; /* Enable Flexbox for vertical centering */
+    flex-direction: column; /* Stack the heading and locations vertically */
+    justify-content: center; /* Vertically center the content */
+    align-items: center; /* Horizontally center the content */
+    height: 600px; /* Adjust height to accommodate all content */
+}
+
+.container3 h2 {
+    color: seashell;
+    margin-bottom: 40px; /* Add some space between the heading and locations */
+    z-index: 1; /* Ensure text is above the background */
+}
+
+.background-image {
+    width: 100%;
+    height: 500px;
+    background-image: url(/Users/adi/Codeccademy/project-1/Tea_cozy/img-locations-background.jpg);
+    background-size: cover;
+    background-position: center;
+    position: absolute; /* Sit behind the content */
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.locations {
+    display: flex;
+    justify-content: space-around;
+    width: 80%; /* Adjust width as needed */
+    z-index: 1; /* Ensure boxes are above the background */
+}
+
+.location-item {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: seashell;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+}
+
+.location-item h3 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.location-item p {
+    margin: 5px 0;
+}
+
+
+/* Footer */
+footer {
+    background-color: black;
+    color: seashell;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: auto;
+}
